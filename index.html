@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sinergia IA</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .hero-section {
+            background: linear-gradient(45deg, #6b46c1, #805ad5);
+            color: white;
+            padding: 6rem 0;
+        }
+        
+        .who-we-are-section {
+            padding: 5rem 0;
+            background-color: white;
+        }
+        
+        .features-section {
+            padding: 5rem 0;
+            background-color: #f8f9fa;
+        }
+        
+        .contact-section {
+            padding: 5rem 0;
+            background-color: white;
+        }
+        
+        .feature-card {
+            padding: 2rem;
+            text-align: center;
+            transition: transform 0.3s ease;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .cta-button {
+            padding: 1rem 2rem;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+        }
+        
+        .cta-button:hover {
+            transform: scale(1.05);
+        }
+        
+        .navbar {
+            background-color: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .section-title {
+            margin-bottom: 2rem;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: #6b46c1;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Sinergia IA</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#quienes-somos">Quiénes Somos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#caracteristicas">Características</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección Hero -->
+    <section id="inicio" class="hero-section">
+        <div class="container text-center">
+            <h1 class="display-4 mb-4">Sinergia IA</h1>
+            <p class="lead mb-4">
+                Potenciamos tu emprendimiento con tecnología de Inteligencia Artificial para maximizar 
+                tu productividad y acelerar el crecimiento de tu negocio.
+            </p>
+            <a href="https://wa.me/mensaje" class="btn btn-light btn-lg cta-button">
+                Obtén asesoría gratuita
+            </a>
+        </div>
+    </section>
+
+    <!-- Sección Quiénes Somos -->
+    <section id="quienes-somos" class="who-we-are-section">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-title">Nuestro Equipo</h2>
+                <p class="lead mt-4">
+                    Somos un equipo interdisciplinario con más de 10 años de experiencia construyendo 
+                    sistemas distribuidos para empresas nacionales y extranjeras. Nos especializamos 
+                    en desarrollar soluciones escalables y de alta calidad capaces de atender a 
+                    millones de usuarios.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Características -->
+    <section id="caracteristicas" class="features-section">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-title">Nuestras Soluciones</h2>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-4 mb-4">
+                    <div class="feature-card">
+                        <h4 class="mb-3">Aumenta el número de ventas usando IA</h4>
+                        <p>Optimiza la creación de funeles de venta, aumenta el número de lead exitosos.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="feature-card">
+                        <h4 class="mb-3">Servicio 24x7</h4>
+                        <p>Usa las capacidades de la IA para operar en cualquier horario sin perder ningún cliente.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="feature-card">
+                        <h4 class="mb-3">Servicio personalizado</h4>
+                        <p>Crear experiencias únicas con la ayuda de la inteligencia artificial</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contacto" class="contact-section">
+        <div class="container text-center">
+            <h2 class="section-title">Próximo cohorte: 1 de febrero</h2>
+            <p class="lead mb-4 mt-4">
+                Nuestro riguroso proceso de selección identifica las ideas más innovadoras y 
+                prometedoras. Durante un mes intensivo, desarrollaremos tu plataforma tecnológica 
+                y estableceremos una sólida presencia en línea para tu startup.
+            </p>
+            <button class="btn btn-primary btn-lg cta-button">
+                ¡Aplica ahora - Cupos limitados!
+            </button>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Smooth scrolling para los enlaces de navegación
+        $(document).ready(function(){
+            $('a.nav-link').on('click', function(event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash;
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top - 70
+                    }, 800);
+                }
+            });
+        });
+    </script>
+</body>
+</html>
